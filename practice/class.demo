@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+class demo{
+    private: int a;
+    protected:int b;
+    public:
+    int c;
+    void set(){a=5,b=10,c=40;}
+    void show(){
+    cout<<a<<b<<c<<endl;}
+};
+int main(){
+    demo s;
+    s.set;
+    s.show;
+}
