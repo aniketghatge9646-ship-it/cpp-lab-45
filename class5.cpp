@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 class Rectangle {
     private:
     double length;
@@ -10,7 +11,7 @@ public:
     Rectangle(double len, double wid) : length(len), width(wid) {}
  // Destructor (optional, but good practice)
    ~Rectangle() {
- std::cout << "Rectangle object destroyed." << std::endl;
+ cout << "Rectangle object destroyed." <<endl;
  }
  // Getter methods for length and width
  double getLength() const {
@@ -39,10 +40,10 @@ int main() {
  // Create a rectangle with custom values
  Rectangle rect(4.0, 40.0);
  // Display properties
- std::cout << "Rectangle properties:" << std::endl;
- std::cout << "Length: " << rect.getLength() << std::endl;
- std::cout << "Width: " << rect.getWidth() << std::endl;
- std::cout << "Area: " << rect.calculateArea() << std::endl;
- std::cout << "Perimeter: " << rect.calculatePerimeter() << std::endl;
+ cout << "Rectangle properties:" <<endl;
+ cout << "Length: " << rect.getLength() <<endl;
+ cout << "Width: " << rect.getWidth() <<endl;
+ cout << "Area: " << rect.calculateArea() <<endl;
+ cout << "Perimeter: " << rect.calculatePerimeter() <<endl;
  return 0;
 }
